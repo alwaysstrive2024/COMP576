@@ -8207,7 +8207,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/var/folders/z6/8hw5tw4s1r90140zc3s6kg580000gn/T/ipykernel_35732/4208299645.py:1: RuntimeWarning: invalid value encountered in divide
+<pre>/var/folders/z6/8hw5tw4s1r90140zc3s6kg580000gn/T/ipykernel_57329/4208299645.py:1: RuntimeWarning: invalid value encountered in divide
   ba / aba
 </pre>
 </div>
@@ -8289,7 +8289,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">nonzero</span><span class="p">(</span><span class="n">ba</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">)</span>
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">nonzero</span> <span class="p">(</span> <span class="n">ba</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8317,7 +8317,7 @@ a.anchor-link {
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">])</span>
-<span class="n">a</span><span class="p">[:,</span><span class="n">np</span><span class="o">.</span><span class="n">nonzero</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">)[</span><span class="mi">0</span><span class="p">]]</span>
+<span class="n">a</span><span class="p">[</span> <span class="p">:,</span><span class="n">np</span><span class="o">.</span><span class="n">nonzero</span><span class="p">(</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="mf">0.5</span> <span class="p">)[</span> <span class="mi">0</span> <span class="p">]</span> <span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -8330,19 +8330,1792 @@ a.anchor-link {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>array([[ 0,  0,  0,  0,  1,  1,  1,  1,  1,  2,  2,  2,  2,  2,  3,  3,
-         3,  3,  3],
-       [ 5,  5,  5,  5,  6,  6,  6,  6,  6,  7,  7,  7,  7,  7,  8,  8,
-         8,  8,  8],
-       [10, 10, 10, 10, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 13, 13,
-        13, 13, 13],
-       [15, 15, 15, 15, 16, 16, 16, 16, 16, 17, 17, 17, 17, 17, 18, 18,
-        18, 18, 18]])</pre>
+<pre>array([[ 1,  3,  4],
+       [ 6,  8,  9],
+       [11, 13, 14],
+       [16, 18, 19]])</pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=18fb52b0facbfdf8">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=18fb52b0facbfdf8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span><span class="p">[:,</span> <span class="n">v</span><span class="o">.</span><span class="n">T</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[ 1,  3,  4],
+       [ 6,  8,  9],
+       [11, 13, 14],
+       [16, 18, 19]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ac74ba4ce00f7218">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span><span class="p">[</span><span class="n">a</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span>
+<span class="n">a</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[ 0,  0,  0,  0,  0],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14],
+       [15, 16, 17, 18, 19]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=68f417e184e5e728">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span><span class="o">*</span><span class="p">(</span><span class="n">a</span><span class="o">&gt;</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">a</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[ 0,  0,  0,  0,  0],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14],
+       [15, 16, 17, 18, 19]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3ef30ece0fdfe7fe">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span><span class="p">[:]</span> <span class="o">=</span><span class="mi">3</span>
+<span class="n">a</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=44866a8b2485a058">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">y</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1861e531ebd0294">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">y</span><span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">y</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([3, 3, 3, 3, 3])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b8701dd3ea8120a8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">y</span>  <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+<span class="n">y</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=397cf924c72b7e31">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">11.</span><span class="p">)</span>
+<span class="n">y</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([ 1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9., 10.])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=590a37cdd6ed270">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mf">1.</span><span class="p">:</span><span class="mf">11.</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([ 1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9., 10.])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2f629a09c64c5b6a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">10</span><span class="n">j</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([ 1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9., 10.])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c85ef51f1dd9e5b1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">10.</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([0., 1., 2., 3., 4., 5., 6., 7., 8., 9.])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=92956f9fd1632105">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[:</span><span class="mf">10.</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([0., 1., 2., 3., 4., 5., 6., 7., 8., 9.])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bb20c8dfb3598007">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[:</span><span class="mi">9</span><span class="p">:</span><span class="mi">10</span><span class="n">j</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([0., 1., 2., 3., 4., 5., 6., 7., 8., 9.])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2ca8421ec857722d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">11.</span><span class="p">)[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[ 1.],
+       [ 2.],
+       [ 3.],
+       [ 4.],
+       [ 5.],
+       [ 6.],
+       [ 7.],
+       [ 8.],
+       [ 9.],
+       [10.]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bbec08dc92277aa0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[0., 0., 0., 0.],
+       [0., 0., 0., 0.],
+       [0., 0., 0., 0.]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=bcd4735662d5ea75">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[[0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.]],
+
+       [[0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.]],
+
+       [[0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0.]]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=de91b50b5fae97b9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[1., 1., 1., 1.],
+       [1., 1., 1., 1.],
+       [1., 1., 1., 1.]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a944e32d549cec2b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[1., 0., 0.],
+       [0., 1., 0.],
+       [0., 0., 1.]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4d0c51da6f66ed1e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([3, 3, 3, 3])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4f6724431fd6e80d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[0.2, 0. , 0. , 0. , 0. ],
+       [0. , 0.8, 0. , 0. , 0. ],
+       [0. , 0. , 0.4, 0. , 0. ],
+       [0. , 0. , 0. , 0.9, 0. ],
+       [0. , 0. , 0. , 0. , 0.7]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=71cf915bbf90c12e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">numpy.random</span><span class="w"> </span><span class="kn">import</span> <span class="n">default_rng</span>
+<span class="n">rng</span> <span class="o">=</span> <span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">rng</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[0.77395605, 0.43887844, 0.85859792, 0.69736803],
+       [0.09417735, 0.97562235, 0.7611397 , 0.78606431],
+       [0.12811363, 0.45038594, 0.37079802, 0.92676499]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=91853830b9acb8d1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([1.        , 1.66666667, 2.33333333, 3.        ])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9ea8179ee297fe22">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">mgrid</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mf">9.</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mf">6.</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[[0., 0., 0., 0., 0., 0.],
+        [1., 1., 1., 1., 1., 1.],
+        [2., 2., 2., 2., 2., 2.],
+        [3., 3., 3., 3., 3., 3.],
+        [4., 4., 4., 4., 4., 4.],
+        [5., 5., 5., 5., 5., 5.],
+        [6., 6., 6., 6., 6., 6.],
+        [7., 7., 7., 7., 7., 7.],
+        [8., 8., 8., 8., 8., 8.]],
+
+       [[0., 1., 2., 3., 4., 5.],
+        [0., 1., 2., 3., 4., 5.],
+        [0., 1., 2., 3., 4., 5.],
+        [0., 1., 2., 3., 4., 5.],
+        [0., 1., 2., 3., 4., 5.],
+        [0., 1., 2., 3., 4., 5.],
+        [0., 1., 2., 3., 4., 5.],
+        [0., 1., 2., 3., 4., 5.],
+        [0., 1., 2., 3., 4., 5.]]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dd7a3bf5d068b6c7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ogrid</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mf">9.</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mf">6.</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f4c0280513379bc9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>(array([[1, 2, 4],
+        [1, 2, 4],
+        [1, 2, 4]]),
+ array([[2, 2, 2],
+        [4, 4, 4],
+        [5, 5, 5]]))</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b7ddb79b7b032930">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">ix_</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>(array([[1],
+        [2],
+        [4]]),
+ array([[2, 4, 5]]))</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=373fc1b42ac3254d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+       [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3c190c7ec48ad09f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[31, 32, 33, 41, 42, 43],
+       [34, 35, 36, 44, 45, 46]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9051d3d4efb27c8d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[31, 32, 33],
+       [34, 35, 36],
+       [41, 42, 43],
+       [44, 45, 46]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ee4e11740e032bc9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>np.int64(3)</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c6dacb465788e83f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([3, 3, 3, 3, 3])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8e76096844f9a47a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([3, 3, 3, 3])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d30c78d2cf0e419e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[41, 42, 43],
+       [44, 45, 46]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=23ccb7b8c07a829d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">v</span> <span class="o">@</span> <span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>np.float64(1.4628738838327795)</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b3fa1aaa8c9f17ef">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[ True,  True,  True],
+       [ True,  True,  True]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=91db68cfc6dad9b3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">logical_or</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[62]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[ True,  True,  True],
+       [ True,  True,  True]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=efff9c58d5237f5b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">c</span> <span class="o">&amp;</span> <span class="n">d</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[ 9, 32, 33],
+       [32, 33, 36]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c93cbe9b9483c52b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">c</span> <span class="o">|</span> <span class="n">d</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[63, 42, 43],
+       [46, 47, 46]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7f58441bf8bed764">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[-3.25218621e+14,  9.22522384e+13,  3.48403565e+13,
+         8.62604285e+13,  4.33481493e+13, -4.94044316e+14,
+        -1.22805060e+13,  1.62500754e+15, -2.62324389e+13,
+        -1.02393283e+15],
+       [-1.42044642e+15,  2.47333249e+15,  1.24503968e+15,
+        -4.28106859e+14, -5.36583785e+14, -3.83120840e+15,
+         4.54053428e+14,  1.62705777e+15,  2.42197983e+14,
+         1.74664114e+14],
+       [ 6.17942014e+15, -6.86158241e+15, -2.77899710e+15,
+        -4.32715156e+14, -9.51750816e+14,  3.10657462e+16,
+        -5.90493605e+14, -4.83960710e+16,  3.86540740e+14,
+         2.23799030e+16],
+       [-5.25926484e+15,  4.53357483e+15,  1.49751389e+15,
+         8.25263232e+14,  2.79632156e+15, -3.07778493e+16,
+         9.56641028e+13,  5.28498557e+16, -1.22630578e+15,
+        -2.53347733e+16],
+       [ 6.22719948e+14, -0.00000000e+00, -0.00000000e+00,
+        -0.00000000e+00, -1.25099990e+15, -0.00000000e+00,
+         9.16666667e-02, -0.00000000e+00,  6.50519946e+14,
+        -2.22399982e+13],
+       [-7.96756104e+14,  6.04476644e+14,  1.99668519e+14,
+         4.70323068e+14,  1.72682891e+14, -4.10371325e+15,
+        -9.23287776e+13,  7.04664742e+15, -1.49496239e+14,
+        -3.35150418e+15],
+       [ 6.05117755e+14, -5.22554594e+14, -1.28928987e+14,
+        -1.21024311e+14, -5.75260363e+13,  4.86999632e+15,
+         1.15510610e+14, -9.60301532e+15,  3.01694370e+13,
+         4.81225512e+15],
+       [ 3.42833736e+14, -3.20761609e+14,  0.00000000e+00,
+        -4.06704989e+14, -1.76140546e+14,  6.59605650e+14,
+         2.93522787e+13,  0.00000000e+00,  7.50424760e+13,
+        -2.03226997e+14],
+       [ 1.62590937e+14,  3.97828467e+12, -2.17871405e+14,
+         2.11283590e+13, -1.24009573e+14,  2.78859139e+15,
+         1.64647370e+12, -5.34571084e+15,  5.53495503e+13,
+         2.65430683e+15],
+       [-1.10996533e+14, -2.71586973e+12,  1.48735047e+14,
+        -1.44237719e+13,  8.46580561e+13, -1.77124260e+14,
+        -1.12400406e+12,  1.96228752e+14, -3.77856742e+13,
+        -8.54517417e+13]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8a1c6a6b1030251e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">pinv</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[66]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[-2.07272727e-02, -1.73333333e-02, -1.39393939e-02,
+        -1.05454545e-02, -7.15151515e-03, -3.75757576e-03,
+        -3.63636364e-04,  3.03030303e-03,  6.42424242e-03,
+         9.81818182e-03],
+       [-1.62424242e-02, -1.35757576e-02, -1.09090909e-02,
+        -8.24242424e-03, -5.57575758e-03, -2.90909091e-03,
+        -2.42424242e-04,  2.42424242e-03,  5.09090909e-03,
+         7.75757576e-03],
+       [-1.17575758e-02, -9.81818182e-03, -7.87878788e-03,
+        -5.93939394e-03, -4.00000000e-03, -2.06060606e-03,
+        -1.21212121e-04,  1.81818182e-03,  3.75757576e-03,
+         5.69696970e-03],
+       [-7.27272727e-03, -6.06060606e-03, -4.84848485e-03,
+        -3.63636364e-03, -2.42424242e-03, -1.21212121e-03,
+        -8.33074180e-20,  1.21212121e-03,  2.42424242e-03,
+         3.63636364e-03],
+       [-2.78787879e-03, -2.30303030e-03, -1.81818182e-03,
+        -1.33333333e-03, -8.48484848e-04, -3.63636364e-04,
+         1.21212121e-04,  6.06060606e-04,  1.09090909e-03,
+         1.57575758e-03],
+       [ 1.69696970e-03,  1.45454545e-03,  1.21212121e-03,
+         9.69696970e-04,  7.27272727e-04,  4.84848485e-04,
+         2.42424242e-04, -3.17453518e-18, -2.42424242e-04,
+        -4.84848485e-04],
+       [ 6.18181818e-03,  5.21212121e-03,  4.24242424e-03,
+         3.27272727e-03,  2.30303030e-03,  1.33333333e-03,
+         3.63636364e-04, -6.06060606e-04, -1.57575758e-03,
+        -2.54545455e-03],
+       [ 1.06666667e-02,  8.96969697e-03,  7.27272727e-03,
+         5.57575758e-03,  3.87878788e-03,  2.18181818e-03,
+         4.84848485e-04, -1.21212121e-03, -2.90909091e-03,
+        -4.60606061e-03],
+       [ 1.51515152e-02,  1.27272727e-02,  1.03030303e-02,
+         7.87878788e-03,  5.45454545e-03,  3.03030303e-03,
+         6.06060606e-04, -1.81818182e-03, -4.24242424e-03,
+        -6.66666667e-03],
+       [ 1.96363636e-02,  1.64848485e-02,  1.33333333e-02,
+         1.01818182e-02,  7.03030303e-03,  3.87878788e-03,
+         7.27272727e-04, -2.42424242e-03, -5.57575758e-03,
+        -8.72727273e-03]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9fc5071438a94308">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">matrix_rank</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>np.int64(2)</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=572319485f8b189d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">b</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[68]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([ 3.18069064e-05,  1.80266488e-01, -7.60953069e-02,  1.01493359e-02,
+       -1.38888889e-02, -8.68977442e-04,  1.52741271e-03, -1.06526059e-03,
+       -1.78395539e-04,  1.21785917e-04])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=23d5d21627e3c2bd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">U</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">Vh</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+<span class="n">U</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[69]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[-0.02550639, -0.58720011,  0.80750433,  0.04903735, -0.00082644,
+         0.00684065, -0.00129347, -0.0033079 ,  0.0029939 , -0.00291351],
+       [-0.08065815, -0.49191372, -0.37085123,  0.1553728 , -0.75644486,
+         0.08850071, -0.05940678,  0.02468651, -0.02942966,  0.06926696],
+       [-0.13580991, -0.39662734, -0.28100912, -0.06628873,  0.37240949,
+        -0.64001769, -0.2501997 ,  0.15582119, -0.28020178,  0.16485589],
+       [-0.19096167, -0.30134095, -0.23113615,  0.01090828,  0.33541507,
+         0.22444573, -0.01226892, -0.68418067,  0.40426106,  0.1569219 ],
+       [-0.24611343, -0.20605456, -0.14426488, -0.21587518,  0.13188318,
+         0.14849898,  0.71499757, -0.01095798, -0.40266142, -0.34151471],
+       [-0.30126519, -0.11076818, -0.10755296,  0.23229134,  0.16925988,
+         0.09356838, -0.23916518,  0.36263039,  0.3840867 , -0.67662062],
+       [-0.35641695, -0.01548179, -0.02163584,  0.01576603,  0.13512345,
+         0.25124124,  0.23952964,  0.5516418 ,  0.26390698,  0.59941645],
+       [-0.41156871,  0.0798046 ,  0.06119131, -0.31778107,  0.01240565,
+         0.46088611, -0.54411234, -0.04200301, -0.45638003,  0.02895008],
+       [-0.46672047,  0.17509098,  0.14721275, -0.54727253, -0.32699715,
+        -0.42838648,  0.06321545, -0.12003635,  0.34233769, -0.06553015],
+       [-0.52187223,  0.27037737,  0.14054179,  0.68384171, -0.07222828,
+        -0.20557763,  0.08870373, -0.23429398, -0.22891344,  0.06716772]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cf6e31d7e0ddb0f1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
+<span class="n">L</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">cholesky</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">L</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[70]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[2.        , 0.        ],
+       [1.        , 1.41421356]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=86cc7f36b921c512">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">D</span><span class="p">,</span><span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f74caf100fd7bda2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">1</span><span class="p">]])</span>
+<span class="n">w</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3ab818f9bd9b15f6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.sparse.linalg</span><span class="w"> </span><span class="kn">import</span> <span class="n">eigs</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">]])</span>
+
+<span class="n">D</span><span class="p">,</span> <span class="n">V</span> <span class="o">=</span> <span class="n">eigs</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=af06d2e89844e7a9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
+
+<span class="n">Q</span><span class="p">,</span> <span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">qr</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=78692d5cd677136d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.linalg</span><span class="w"> </span><span class="kn">import</span> <span class="n">lu</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
+<span class="n">P</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">U</span> <span class="o">=</span> <span class="n">lu</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=43f190f437302c8f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.sparse.linalg</span><span class="w"> </span><span class="kn">import</span> <span class="n">cg</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">cg</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8ed6726e5fcf76a5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<span class="n">fa</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">fa</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[77]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([10.+0.j, -2.+2.j, -2.+0.j, -2.-2.j])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=842c7c1b1c211a77">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<span class="n">fa</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a_reconstructed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">ifft</span><span class="p">(</span><span class="n">fa</span><span class="p">)</span>
+<span class="n">a_reconstructed</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[78]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([1.+0.j, 2.+0.j, 3.+0.j, 4.+0.j])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=12ab87d71b77420a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>
+<span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[79]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[1, 2, 3],
+       [7, 8, 9]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f7f9bcf8d33b4ab3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [80]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=addcd8aab6db9290">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[81]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[1, 2, 3],
+       [7, 8, 9]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c3ec8d5d9bd78170">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [82]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">I</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">a</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]);</span> <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">I</span><span class="p">,:]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bcd67c0bbc90250e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [83]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">lstsq</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=69e93957b461268d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">signal</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  
+<span class="n">q</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">q</span><span class="p">))</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">signal</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=59e7b849dc6ba29d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [85]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[85]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([1, 2, 3, 7, 8, 9])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4c80fc312618bb02">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">a</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[86]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[3, 1, 2],
+       [9, 7, 8]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7eb42a5ece802c99">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Task03:-Plotting">Task03: Plotting<a class="anchor-link" href="#Task03:-Plotting">¶</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=df2697d75ba8fea7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">14</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
+<img alt="No description has been provided for this image" class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjEAAAGiCAYAAAAWdZeEAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjYsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvq6yFwwAAAAlwSFlzAAAPYQAAD2EBqD+naQAAOOhJREFUeJzt3Xl4VPWh//HPZJsESCYJkA2SGBBlRxLWoCiiIFoEpYr0Xggurd7igvlxVVxabC2RWluvoFi8rLUKbcNmKUq4QnBBJEDYZAklEMCEPTMkwGQ7vz/QaWNYDJnk5Ezer+c5z+M5c76Hz8wjkw/fc3KOzTAMQwAAABbjZ3YAAACAq0GJAQAAlkSJAQAAlkSJAQAAlkSJAQAAlkSJAQAAlkSJAQAAlkSJAQAAlkSJAQAAlkSJAQAAllSrEpORkaHevXsrNDRUUVFRGjlypPbs2VNtH8MwNGXKFMXFxSkkJES33HKLdu7cecVjZ2ZmqnPnzrLb7ercubOWLFlSu3cCAACalFqVmOzsbE2YMEFffvmlsrKyVFFRoSFDhqi0tNSzz29/+1v9/ve/14wZM7Rx40bFxMTo9ttv15kzZy553PXr12v06NEaO3astm7dqrFjx+r+++/Xhg0brv6dAQAAn2arywMgjx8/rqioKGVnZ2vgwIEyDENxcXGaOHGinn32WUmS2+1WdHS0pk2bpkcfffSixxk9erRcLpdWrlzp2XbHHXcoIiJCH3zwwdXGAwAAPiygLoOdTqckKTIyUpKUn5+voqIiDRkyxLOP3W7XzTffrC+++OKSJWb9+vV6+umnq20bOnSo3njjjUv+2W63W26327NeVVWlU6dOqWXLlrLZbFf7lgAAQAMyDENnzpxRXFyc/Pxqd6nuVZcYwzCUnp6uG2+8UV27dpUkFRUVSZKio6Or7RsdHa2DBw9e8lhFRUUXHfPd8S4mIyNDL7/88tXGBwAAjcihQ4fUtm3bWo256hLz+OOPa9u2bfrss89qvPb9mRDDMK44O1LbMZMnT1Z6erpn3el0KiEhQYcOHVJYWNgPeQsAAMBkLpdL8fHxCg0NrfXYqyoxTzzxhJYvX65169ZVa00xMTGSLsysxMbGerYfO3asxkzLv4uJiakx63KlMXa7XXa7vcb2sLAwSgwAABZzNZeC1Orkk2EYevzxx7V48WJ98sknSkpKqvZ6UlKSYmJilJWV5dlWVlam7OxspaamXvK4/fv3rzZGklatWnXZMQAAoGmr1UzMhAkT9P7772vZsmUKDQ31zJ44HA6FhITIZrNp4sSJmjp1qjp06KAOHTpo6tSpatasmX7yk594jjNu3Di1adNGGRkZkqSnnnpKAwcO1LRp0zRixAgtW7ZMq1evvuipKgAAAKmWJWbmzJmSpFtuuaXa9rlz52r8+PGSpGeeeUbnzp3Tz3/+c50+fVp9+/bVqlWrqp3rKigoqHYFcmpqqhYuXKgXX3xRL730ktq3b69Fixapb9++V/m2AACAr6vTfWIaE5fLJYfDIafTyTUxAABYRF1+fvPsJAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEmUGAAAYEm1LjHr1q3T8OHDFRcXJ5vNpqVLl1Z73WazXXR57bXXLnnMefPmXXTM+fPna/2GAABA01DrElNaWqoePXpoxowZF329sLCw2jJnzhzZbDaNGjXqsscNCwurMTY4OLi28QAAQBMRUNsBw4YN07Bhwy75ekxMTLX1ZcuWadCgQWrXrt1lj2uz2WqMBQAAuJR6vSbm6NGjWrFihR5++OEr7ltSUqLExES1bdtWP/rRj7Rly5bL7u92u+VyuaotAACg6ajXEjN//nyFhobq3nvvvex+HTt21Lx587R8+XJ98MEHCg4O1oABA5SXl3fJMRkZGXI4HJ4lPj7e2/EBAEAjZjMMw7jqwTablixZopEjR1709Y4dO+r222/X9OnTa3XcqqoqJScna+DAgXrzzTcvuo/b7Zbb7fasu1wuxcfHy+l0KiwsrFZ/HgAAMIfL5ZLD4biqn9+1vibmh/r000+1Z88eLVq0qNZj/fz81Lt378vOxNjtdtnt9rpEBAAAFlZvp5Nmz56tlJQU9ejRo9ZjDcNQbm6uYmNj6yEZAADwBbWeiSkpKdG+ffs86/n5+crNzVVkZKQSEhIkXZga+utf/6rXX3/9oscYN26c2rRpo4yMDEnSyy+/rH79+qlDhw5yuVx68803lZubq7feeutq3hMAAGgCal1icnJyNGjQIM96enq6JCktLU3z5s2TJC1cuFCGYWjMmDEXPUZBQYH8/P41CVRcXKyf/exnKioqksPhUM+ePbVu3Tr16dOntvEAAEATUacLexuTulwYBAAAzFGXn988OwkAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFgSJQYAAFhSrUvMunXrNHz4cMXFxclms2np0qXVXh8/frxsNlu1pV+/flc8bmZmpjp37iy73a7OnTtryZIltY0GAACakFqXmNLSUvXo0UMzZsy45D533HGHCgsLPcs//vGPyx5z/fr1Gj16tMaOHautW7dq7Nixuv/++7Vhw4baxgMAAE2EzTAM46oH22xasmSJRo4c6dk2fvx4FRcX15ihuZzRo0fL5XJp5cqVnm133HGHIiIi9MEHH/ygY7hcLjkcDjmdToWFhf3gPxsAAJinLj+/6+WamLVr1yoqKkrXXXedfvrTn+rYsWOX3X/9+vUaMmRItW1Dhw7VF198cckxbrdbLper2gIAAJoOr5eYYcOG6c9//rM++eQTvf7669q4caNuvfVWud3uS44pKipSdHR0tW3R0dEqKiq65JiMjAw5HA7PEh8f77X3AAAAGr8Abx9w9OjRnv/u2rWrevXqpcTERK1YsUL33nvvJcfZbLZq64Zh1Nj27yZPnqz09HTPusvlosgAANCEeL3EfF9sbKwSExOVl5d3yX1iYmJqzLocO3asxuzMv7Pb7bLb7V7LCQAArKXe7xNz8uRJHTp0SLGxsZfcp3///srKyqq2bdWqVUpNTa3veAAAwKJqPRNTUlKiffv2edbz8/OVm5uryMhIRUZGasqUKRo1apRiY2N14MABPf/882rVqpXuuecez5hx48apTZs2ysjIkCQ99dRTGjhwoKZNm6YRI0Zo2bJlWr16tT777DMvvEUAAOCLal1icnJyNGjQIM/6d9elpKWlaebMmdq+fbsWLFig4uJixcbGatCgQVq0aJFCQ0M9YwoKCuTn969JoNTUVC1cuFAvvviiXnrpJbVv316LFi1S37596/LeAACAD6vTfWIaE+4TAwCA9TS6+8QAAADUN0oMAACwJEoMAACwJEoMAACwJEoMAACwJEoMAACwJEoMAACwJEoMAACwJEoMAACwJEoMAACwJEoMADQRO4449VzmNjnPlpsdBfCKWj8AEgBgPRWVVXo2c5t2fuOSzSZl3Nvd7EhAnTETAwBNwOzP8rXzG5fCggP09O3XmR0H8ApKDAD4uIMnS/WH1XslSS/e1VlRocEmJwK8gxIDAD7MMAw9v2S7zpdXqX+7lrqvV1uzIwFeQ4kBAB+WufmIPt93UvYAP029t5tsNpvZkQCvocQAgI86UeLWKyu+liQ9dVsHJbVqbnIiwLsoMQDgo3714dcqPluuTrFh+ulN7cyOA3gdJQYAfNAnu49q+dZv5GeTpo3qpkB/vu7he/i/GgB8TIm7Qi8u2SFJemhAkrq3DTc3EFBPKDEA4GN+9/EefeM8r7YRIUofwj1h4LsoMQDgQzYXnNb89QckSVPv6aZmQdyYHb6LEgMAPqKsokqTM7fLMKR7e7bRwOtamx0JqFeUGADwEX/M/qf2HD2jyOZBevFHnc2OA9Q7SgwA+IB9x0o0/ZN9kqRf/KizIpsHmZwIqH+UGACwuKoqQ88v3q6yyirdfF1rjbghzuxIQIOgxACAxX2wsUBfHTilkEB/vTKyK48WQJNBiQEACzvqOq9X/7FbkjRp6PWKj2xmciKg4VBiAMDCfrFsh864K9SjrUPjU68xOw7QoCgxAGBRH+0o1Mc7jyrAz6ZXR3WXvx+nkdC0UGIAwIKc58r1i2U7JUmP3txOnWLDTE4ENDxKDABY0Ksrd+vYGbeSWjXXE7d2MDsOYApKDABYzIb9J/XBVwWSpIx7uyk40N/kRIA5KDEAYCHnyys1efF2SdKYPvHq166lyYkA81BiAMBC3lqzT/tPlKp1qF3PDetkdhzAVJQYALCI3UUuzVz7T0nSr+7uIkdIoMmJAHPVusSsW7dOw4cPV1xcnGw2m5YuXep5rby8XM8++6y6deum5s2bKy4uTuPGjdM333xz2WPOmzdPNputxnL+/PlavyEA8EWVVYaezdyuiipDt3eO1h1dY8yOBJiu1iWmtLRUPXr00IwZM2q8dvbsWW3evFkvvfSSNm/erMWLF2vv3r26++67r3jcsLAwFRYWVluCg4NrGw8AfNKC9Qe09VCxQu0B+vUIHi0ASFJAbQcMGzZMw4YNu+hrDodDWVlZ1bZNnz5dffr0UUFBgRISEi55XJvNppiYH/4vC7fbLbfb7Vl3uVw/eCwAWMnh02f12sd7JEnPDOuoGAf/wAOkBrgmxul0ymazKTw8/LL7lZSUKDExUW3bttWPfvQjbdmy5bL7Z2RkyOFweJb4+HgvpgaAxsEwDL20dIfOllWqV2KE/qPPpf8xCDQ19Vpizp8/r+eee04/+clPFBZ26btJduzYUfPmzdPy5cv1wQcfKDg4WAMGDFBeXt4lx0yePFlOp9OzHDp0qD7eAgCYavnWb7Rmz3EF+fvp1VHd5MejBQCPWp9O+qHKy8v1wAMPqKqqSm+//fZl9+3Xr5/69evnWR8wYICSk5M1ffp0vfnmmxcdY7fbZbfbvZoZABqT06Vl+tWHX0uSJgy6VtdGhZqcCGhc6qXElJeX6/7771d+fr4++eSTy87CXIyfn5969+592ZkYAPB1r6zYpZOlZbouuoX+65b2ZscBGh2vn076rsDk5eVp9erVatmy9neTNAxDubm5io2N9XY8ALCET/OOK3PzYdlsUsa93RUUwG29gO+r9UxMSUmJ9u3b51nPz89Xbm6uIiMjFRcXpx//+MfavHmz/v73v6uyslJFRUWSpMjISAUFBUmSxo0bpzZt2igjI0OS9PLLL6tfv37q0KGDXC6X3nzzTeXm5uqtt97yxnsEAEs5V1ap55dceLTAuH6JSkmMMDkR0DjVusTk5ORo0KBBnvX09HRJUlpamqZMmaLly5dLkm644YZq49asWaNbbrlFklRQUCA/v3/9q6K4uFg/+9nPVFRUJIfDoZ49e2rdunXq06dPbeMBgOX9YfVeHTp1TrGOYP33HR3NjgM0WjbDMAyzQ3iDy+WSw+GQ0+ms9TU4ANBYbD/s1Ii3PlOVIc1O66XBnaLNjgTUq7r8/OYkKwA0EuWVVXo2c5uqDOlH3WMpMMAVUGIAoJGY/Vm+vi50yRESqF8O72J2HKDRo8QAQCNw4ESp/pC1V5L0wl2d1DqU+2ABV0KJAQCTGYahF5Zul7uiSqntW+q+lLZmRwIsgRIDACb726bD+nzfSdkD/DT1nm48oRr4gSgxAGCi42fcemXFLknS07dfp2taNTc5EWAdlBgAMNHLH+6U81y5OseG6ZEbk8yOA1gKJQYATPJ/u47q79sK5WeTpo3qrgB/vpKB2uBvDACYoMRdoReX7pAkPXJTO3Vr6zA5EWA9lBgAMMHvPt6jQud5xUeG6OnbrjM7DmBJlBgAaGCbDp7W/PUHJElT7+mmkCB/cwMBFkWJAYAGVFZRpcmLt8kwpHuT2+imDq3NjgRYFiUGABrQO9n/1N6jJWrZPEgv3dXZ7DiApVFiAKCB7Dt2RjM+2SdJ+sXwzopoHmRyIsDaKDEA0ACqqgxNXrxdZZVVuuX61rq7R5zZkQDLo8QAQAN4/6sCbTxwWs2C/PXKyK48WgDwAkoMANSzIud5vbpytyRp0pDr1TaimcmJAN9AiQGAemQYhl5atkMl7gr1iA9XWuo1ZkcCfAYlBgDq0Uc7ipT19VEF+Nk0bVQ3+ftxGgnwFkoMANQT57ly/WL5TknSYze3V8eYMJMTAb6FEgMA9eTVlbt0/Ixb7Vo11+O3Xmt2HMDnUGIAoB58uf+kPvjqkCQp495uCg7k0QKAt1FiAMDLzpdXavLi7ZKkMX0S1LddS5MTAb6JEgMAXjb9kzzlnyhVVKhdzw3raHYcwGdRYgDAi3YVuvTH7P2SpF+N6CJHSKDJiQDfRYkBAC+prDL0XOY2VVQZGtolWnd0jTU7EuDTKDEA4CXzvzigrYedCrUH6FcjupodB/B5lBgA8IJDp87qd6v2SJKeu7OjosOCTU4E+D5KDADUkWEYenHpDp0tq1SfayI1pneC2ZGAJoESAwB1tHzrN8ree1xB/n6aem83+fFoAaBBUGIAoA5OlZbp5Q+/liQ9ceu1ujaqhcmJgKaDEgMAdfDKiq91qrRM10eH6tGb25sdB2hSKDEAcJXW7T2uxZuPyGaTMkZ1U1AAX6lAQ+JvHABchbNlFXp+yYVHC6T1v0bJCREmJwKaHkoMAFyFP2Tt1eHT5xTnCNakodebHQdokmpdYtatW6fhw4crLi5ONptNS5curfa6YRiaMmWK4uLiFBISoltuuUU7d+684nEzMzPVuXNn2e12de7cWUuWLKltNABoENsOF2v2Z/mSpFfu6aoW9gCTEwFNU61LTGlpqXr06KEZM2Zc9PXf/va3+v3vf68ZM2Zo48aNiomJ0e23364zZ85c8pjr16/X6NGjNXbsWG3dulVjx47V/fffrw0bNtQ2HgDUq/LKKj2XuV1VhjS8R5xu7RhtdiSgybIZhmFc9WCbTUuWLNHIkSMlXZiFiYuL08SJE/Xss89Kktxut6KjozVt2jQ9+uijFz3O6NGj5XK5tHLlSs+2O+64QxEREfrggw8uOsbtdsvtdnvWXS6X4uPj5XQ6FRYWdrVvCQAua+baf2raR7sV3ixQq9NvVqsWdrMjAZbmcrnkcDiu6ue3V6+Jyc/PV1FRkYYMGeLZZrfbdfPNN+uLL7645Lj169dXGyNJQ4cOveyYjIwMORwOzxIfH1/3NwAAl3HgRKneWL1XkvTCnZ0oMIDJvFpiioqKJEnR0dWnV6Ojoz2vXWpcbcdMnjxZTqfTsxw6dKgOyQHg8gzD0OTF2+WuqNKAa1vqxyltzY4ENHn1cjWazVb9ltuGYdTYVtcxdrtddjv/CgLQMP6ac1jr959UcKCfpt7T7YrfaQDqn1dnYmJiYiSpxgzKsWPHasy0fH9cbccAQEM5dua8fvOPXZKkp2+7Toktm5ucCIDk5RKTlJSkmJgYZWVlebaVlZUpOztbqamplxzXv3//amMkadWqVZcdAwAN5eUPv5bzXLm6xIXp4RuTzI4D4Fu1Pp1UUlKiffv2edbz8/OVm5uryMhIJSQkaOLEiZo6dao6dOigDh06aOrUqWrWrJl+8pOfeMaMGzdObdq0UUZGhiTpqaee0sCBAzVt2jSNGDFCy5Yt0+rVq/XZZ5954S0CwNVb/fVRrdhWKH8/m6aN6q4Af+4RCjQWtS4xOTk5GjRokGc9PT1dkpSWlqZ58+bpmWee0blz5/Tzn/9cp0+fVt++fbVq1SqFhoZ6xhQUFMjP719fBKmpqVq4cKFefPFFvfTSS2rfvr0WLVqkvn371uW9AUCdnDlfrpeW7ZAkPXJjkrq2cZicCMC/q9N9YhqTuvyeOQBczC+W7dCC9QeVENlMH08cqJAgf7MjAT6n0dwnBgB8xaaDp/SnLw9Kkqbe040CAzRClBgA+B53RaWey9wuw5B+nNJWN3ZoZXYkABdBiQGA73ln7X7lHStRy+ZBeuHOTmbHAXAJlBgA+Dd5R89oxpo8SdIv7+6iiOZBJicCcCmUGAD4VlWVoecWb1d5paFB17fW8O6xZkcCcBmUGAD41p+/KtCmg6fVLMhfr/BoAaDRo8QAgKRC5zlNW7lbkvTM0OvVJjzE5EQAroQSA6DJMwxDLy3dqRJ3hW6ID9fY/teYHQnAD0CJAdDkrdxRpNW7jirg20cL+PtxGgmwAkoMgCbNebZcv1y+U5L0X7e01/UxoVcYAaCxoMQAaNIyVu7S8TNutWvdXBMGXWt2HAC1QIkB0GSt/+dJLdx4SJL06r3dFRzIowUAK6HEAGiSzpdX6vkl2yVJP+mboD5JkSYnAlBblBgATdKb/5en/BOligq167lhHc2OA+AqUGIANDlff+PSrHX7JUm/GtFVYcGBJicCcDUoMQCalMoqQ88t3qaKKkN3dInRHV1jzI4E4CpRYgA0KXM/z9e2w06FBgfo5RFdzI4DoA4oMQCajEOnzur1VXslSZOHdVJ0WLDJiQDUBSUGQJNgGIZeWLpD58or1ScpUg/0jjc7EoA6osQAaBKW5X6jdXuPKyjATxn3dpMfjxYALI8SA8DnnSxx6+UPLzxa4Mlbr1X71i1MTgTAGygxAHzeKyt26fTZcl0fHaqfDWxvdhwAXkKJAeDTsvce15ItR2SzSa+O6qagAL72AF/B32YAPutsWYVe+PbRAuNTr1HPhAiTEwHwJkoMAJ/1+1V7dfj0ObUJD9GkIdebHQeAl1FiAPikrYeKNefzfEnSK/d0VXN7gMmJAHgbJQaAzymvrNJzi7erypDu7hGnQddHmR0JQD2gxADwOe9+ul+7Cl0KbxaoXwzvbHYcAPWEEgPAp+SfKNUbq/MkSS/d1VmtWthNTgSgvlBiAPgMwzA0efE2lVVU6aYOrXRvchuzIwGoR5QYAD7jLzmH9OX+UwoO9NNvRnaTzcajBQBfRokB4BOOnTmv36zYJUlKv/06JbRsZnIiAPWNEgPAJ7y8/Gu5zleoa5swPTQgyew4ABoAJQaA5WV9fVQrthfK38+mV+/trgB/vtqApoC/6QAs7cz5cr20dIck6ZGbktS1jcPkRAAaitdLzDXXXCObzVZjmTBhwkX3X7t27UX33717t7ejAfBBv/1oj4pc55XYspkmDr7O7DgAGpDX78O9ceNGVVZWetZ37Nih22+/Xffdd99lx+3Zs0dhYWGe9datW3s7GgAfk3PglN7bcFCSNPWebgoJ8jc5EYCG5PUS8/3y8eqrr6p9+/a6+eabLzsuKipK4eHh3o4DwEe5Kyr13OLtMgzpvpS2GnBtK7MjAWhg9XpNTFlZmd577z099NBDV7xfQ8+ePRUbG6vBgwdrzZo1Vzy22+2Wy+WqtgBoOt5e80/tO1aiVi2C9MJdncyOA8AE9Vpili5dquLiYo0fP/6S+8TGxmrWrFnKzMzU4sWLdf3112vw4MFat27dZY+dkZEhh8PhWeLj472cHkBjlXf0jN5eu0+S9MvhXRTeLMjkRADMYDMMw6ivgw8dOlRBQUH68MMPazVu+PDhstlsWr58+SX3cbvdcrvdnnWXy6X4+Hg5nc5q19YA8C1VVYbu++N6bTp4WoM7Rul/03pxZ17AwlwulxwOx1X9/Pb6NTHfOXjwoFavXq3FixfXemy/fv303nvvXXYfu90uu50HuwFNzZ83HNSmg6fVPMhfvx7ZlQIDNGH1djpp7ty5ioqK0l133VXrsVu2bFFsbGw9pAJgZYXOc5r20R5J0jN3dFRceIjJiQCYqV5mYqqqqjR37lylpaUpIKD6HzF58mQdOXJECxYskCS98cYbuuaaa9SlSxfPhcCZmZnKzMysj2gALMowDL20dIdK3BVKTgjXf/ZLNDsSAJPVS4lZvXq1CgoK9NBDD9V4rbCwUAUFBZ71srIyTZo0SUeOHFFISIi6dOmiFStW6M4776yPaAAs6h/bi7R61zEF+tv06qju8vfjNBLQ1NXrhb0NqS4XBgFo3JxnyzX499k6UeLWk4M7KP127swL+Iq6/Pzm2UkAGr2p/9ilEyVutW/dXBMGtTc7DoBGghIDoFH7aEehFuUckiS9Oqq77AE8WgDABZQYAI3WxgOn9OTCXEnSgwOuUe9rIs0NBKBRocQAaJTyjp7Rw/M2qqyiSrd1itYLd/JoAQDVUWIANDqFznNKm/OVXOcv/Dr19DE9FeDP1xWA6vhWANCoOM+Va/ycjfrGeV7tWjfX7LTeCgniOhgANVFiADQa58sr9bMFOdpz9Ixah9o1/8E+imjOwx0BXBwlBkCjUFVl6P/9Zas25J9SC3uA5j3YW/GRzcyOBaARo8QAMJ1hGPrV37/Wiu2FCvS3adbYFHWJc5gdC0AjR4kBYLo/rtuveV8ckCS9fv8NSr22lbmBAFgCJQaAqRZvPqxXV+6WJL14Vyfd3SPO5EQArIISA8A06/Ye1zN/2yZJeuTGJD1yUzuTEwGwEkoMAFNsP+zUf723SRVVhu7uEafnuZkdgFqixABocAdPlurBeV+ptKxSA65tqdfu6y4/P5vZsQBYDCUGQIM6UeJW2pyvdKKkTJ1jw/TOf6bwUEcAV4USA6DBlLor9PC8jTpw8qzaRoRo3oO9FRocaHYsABZFiQHQIMorqzTh/c3aetipiGaBmv9QH0WFBZsdC4CFUWIA1DvDMDR58Xat3XNcwYF+mj2+t9q3bmF2LAAWR4kBUO9eX7VXf9t0WH42acaYZCUnRJgdCYAPoMQAqFd/+vKgZqzZJ0maek833dY52uREAHwFJQZAvfloR5F+sWyHJGnibR30QJ8EkxMB8CWUGAD1YuOBU3py4RYZhjSmT7yeGtzB7EgAfAwlBoDX5R09o4fnbVRZRZVu6xStX4/oKpuNm9kB8C5KDACvKnSeU9qcr+Q6X6HkhHBNH9NTAf581QDwPr5ZAHiN81y5xs/ZqG+c59WudXPNTuutkCDuxgugflBiAHjF+fJK/WxBjvYcPaPWoXbNf7CPIpoHmR0LgA+jxACos6oqQ//vL1u1If+UWtgDNO/B3oqPbGZ2LAA+jhIDoE4Mw9Cv/v61VmwvVKC/TbPGpqhLnMPsWACaAEoMgDr547r9mvfFAUnS6/ffoNRrW5kbCECTQYkBcNUWbz6sV1fuliS9eFcn3d0jzuREAJoSSgyAq7Ju73E987dtkqRHbkzSIze1MzkRgKaGEgOg1nYcceq/3tukiipDd/eI0/N3djI7EoAmiBIDoFYKTp7V+LlfqbSsUqntW+q1+7rLz4+78QJoeJQYAD/YyRK3xs3ZoBMlZeoUG6Y/jk2RPYCb2QEwByUGwA9ytqxCD83bqAMnz6pNeIjmP9hbocGBZscC0IR5vcRMmTJFNput2hITE3PZMdnZ2UpJSVFwcLDatWund955x9uxANRBeWWVJvx5s7Yediq8WaAWPNxHUWHBZscC0MQF1MdBu3TpotWrV3vW/f0vPd2cn5+vO++8Uz/96U/13nvv6fPPP9fPf/5ztW7dWqNGjaqPeABqwTAMvbBku9bsOa7gQD/NTuut9q1bmB0LAOqnxAQEBFxx9uU777zzjhISEvTGG29Ikjp16qScnBz97ne/o8QAjcDvs/bqLzmH5WeTpo9JVkpihNmRAEBSPV0Tk5eXp7i4OCUlJemBBx7Q/v37L7nv+vXrNWTIkGrbhg4dqpycHJWXl19ynNvtlsvlqrYA8K73vjyo6Z/skyT95p5uur1ztMmJAOBfvF5i+vbtqwULFujjjz/Wu+++q6KiIqWmpurkyZMX3b+oqEjR0dW/GKOjo1VRUaETJ05c8s/JyMiQw+HwLPHx8V59H0BT9/HOIv1i2Q5J0sTbOmhMnwSTEwFAdV4vMcOGDdOoUaPUrVs33XbbbVqxYoUkaf78+ZccY7NVv8eEYRgX3f7vJk+eLKfT6VkOHTrkhfQAJCnnwCk9+cEWVRnSmD7xempwB7MjAUAN9XJNzL9r3ry5unXrpry8vIu+HhMTo6Kiomrbjh07poCAALVs2fKSx7Xb7bLb7V7NCkDKO3pGD8/PkbuiSrd1itavR3S97D8oAMAs9X6fGLfbrV27dik2Nvair/fv319ZWVnVtq1atUq9evVSYCD3oAAaUpHzvNLmfCXnuXIlJ4Rr+pieCvDndlIAGievfztNmjRJ2dnZys/P14YNG/TjH/9YLpdLaWlpki6cBho3bpxn/8cee0wHDx5Uenq6du3apTlz5mj27NmaNGmSt6MBuAznuXKNn/uVvnGeV7vWzTU7rbdCgrgbL4DGy+unkw4fPqwxY8boxIkTat26tfr166cvv/xSiYmJkqTCwkIVFBR49k9KStI//vEPPf3003rrrbcUFxenN998k1+vBhqQu6JSj/4pR7uLzqh1qF3zH+yjiOZBZscCgMuyGd9dRWtxLpdLDodDTqdTYWFhZscBLKOqytATC7doxbZCtbAHaNGj/dQlzmF2LABNRF1+fnOyG2jCDMPQr1d8rRXbChXob9OssSkUGACWQYkBmrBZ6/Zr7ucHJEmv33+DUq9tZW4gAKgFSgzQRC3ZclgZK3dLkl68q5Pu7hFnciIAqB1KDNAEfZp3XP/9122SpEduTNIjN7UzOREA1B4lBmhidhxx6rE/bVJFlaG7e8Tp+Ts7mR0JAK4KJQZoQgpOntX4uV+ptKxSqe1b6rX7usvPj7vxArAmSgzQRJwscWvcnA06UVKmTrFh+uPYFNkDuJkdAOuixABNwNmyCj00b6MOnDyrNuEhmv9gb4UG81gPANZGiQF8XHlllSb8ebO2HnYqvFmgFjzcR1FhwWbHAoA6o8QAPswwDL2wZLvW7Dmu4EA/zU7rrfatW5gdCwC8ghID+LDfZ+3VX3IOy88mTR+TrJTECLMjAYDXUGIAH/Xelwc1/ZN9kqTf3NNNt3eONjkRAHgXJQbwQR/vLNIvlu2QJD01uIPG9EkwOREAeB8lBvAxOQdO6ckPtqjKkMb0idfE2zqYHQkA6gUlBvAheUfP6OH5OXJXVOm2TlH69Yiustm4mR0A30SJAXxEkfO80uZ8Jee5cvVMCNf0MckK8OevOADfxTcc4AOc58o1fu5X+sZ5Xu1aN9fstN4KCeJuvAB8GyUGsDh3RaUe/VOOdhedUetQu+Y/2EeRzYPMjgUA9Y4SA1hYVZWh9L9s1Zf7T6mFPUDzHuyt+MhmZscCgAZBiQEsyjAM/XrF11qxrVCB/jbNGpuiLnEOs2MBQIOhxAAWNWvdfs39/IAk6fX7b1Dqta3MDQQADYwSA1jQki2HlbFytyTpxbs66e4ecSYnAoCGR4kBLObTvOP6779ukyQ9cmOSHrmpncmJAMAclBjAQnYcceqxP21SRZWhu3vE6fk7O5kdCQBMQ4kBLKLg5FmNn7tRpWWVSm3fUq/d111+ftyNF0DTRYkBLOBkiVtpc7/SiRK3OsWG6Y9jU2QP4GZ2AJo2SgzQyJ0tq9BD83OUf6JUbcJDNP/B3goNDjQ7FgCYjhIDNGIVlVV6/P0t2nqoWOHNArXg4T6KCgs2OxYANAqUGKCRMgxDzy/Zrk92H1NwoJ9mp/VW+9YtzI4FAI0GJQZopP6QtVd/yTksP5s0fUyyUhIjzI4EAI0KJQZohP684aDe/GSfJOk393TT7Z2jTU4EAI0PJQZoZD7eWaSXlu6QJD01uIPG9EkwOREANE6UGKARyTlwSk9+sEVVhjSmT7wm3tbB7EgA0GhRYoBGYt+xM3p4fo7cFVW6rVOUfj2iq2w2bmYHAJdCiQEagaOu80qbs1HOc+XqmRCu6WOSFeDPX08AuByvf0tmZGSod+/eCg0NVVRUlEaOHKk9e/ZcdszatWtls9lqLLt37/Z2PKDRcZ0vV9qcr3Sk+JzatWqu2Wm9FRLE3XgB4Eq8XmKys7M1YcIEffnll8rKylJFRYWGDBmi0tLSK47ds2ePCgsLPUuHDlwPAN/mrqjUzxbkaHfRGbUOtWv+Q30U2TzI7FgAYAkB3j7gRx99VG197ty5ioqK0qZNmzRw4MDLjo2KilJ4eLi3IwGNUlWVofS/bNWX+0+phT1A8x7srfjIZmbHAgDLqPeT7k6nU5IUGRl5xX179uyp2NhYDR48WGvWrLnsvm63Wy6Xq9oCWIVhGHplxS6t2FaoQH+b/jg2RV3iHGbHAgBLqdcSYxiG0tPTdeONN6pr166X3C82NlazZs1SZmamFi9erOuvv16DBw/WunXrLjkmIyNDDofDs8THx9fHWwDqxbuf7tecz/MlSb+7r4cGXNvK5EQAYD02wzCM+jr4hAkTtGLFCn322Wdq27ZtrcYOHz5cNptNy5cvv+jrbrdbbrfbs+5yuRQfHy+n06mwsLA65Qbq09ItRzRxUa4k6YU7O+mnA9uZGwgATORyueRwOK7q53e9zcQ88cQTWr58udasWVPrAiNJ/fr1U15e3iVft9vtCgsLq7YAjd1neSf033/bKkl65MYkCgwA1IHXL+w1DENPPPGElixZorVr1yopKemqjrNlyxbFxsZ6OR1gnh1HnHr0TzkqrzR0d484PX9nJ7MjAYCleb3ETJgwQe+//76WLVum0NBQFRUVSZIcDodCQkIkSZMnT9aRI0e0YMECSdIbb7yha665Rl26dFFZWZnee+89ZWZmKjMz09vxAFMUnDyr8XM3qrSsUqntW+q1+7rLz4+78QJAXXi9xMycOVOSdMstt1TbPnfuXI0fP16SVFhYqIKCAs9rZWVlmjRpko4cOaKQkBB16dJFK1as0J133unteECDO1niVtrcr3SixK1OsWH649gU2QO4mR0A1FW9XtjbkOpyYRBQX86WVWjMuxu09VCx2oSHaMnPUxUVFmx2LABoNBrlhb1AU1dRWaXH39+irYeKFd4sUAse7kOBAQAv8vrpJKApq6wytPfoGW0uOK2PdhTp07wTCg700+y03mrfuoXZ8QDAp1BigDooPlumLQXF2lxwWpsLTmvrIadK3BWe1/1s0vQxyUpJjDAxJQD4JkoM8ANVVRnad7xEmw6e1uaDF0rLP4/XfLBp8yB/3ZAQruSECA3pHKNubXmcAADUB0oMcAmu8+XKLSi+UFoKTiv3ULHOnK+osV9Sq+bqmRCulMQIJSdE6LroUPnz69MAUO8oMYAuzLLsP1F64bTQt6Ul71iJvv+7eyGB/uoR71ByQoRSEiPUMyFCkc2DzAkNAE0cJQZNUom7QlsP/WuWZUtBsZznymvslxDZTMnfzrL0TIhQx5hQBfjzS30A0BhQYuDzDMPQgZNnPYVl88HT2nv0jKq+N8tiD/BTj7bhSk6MUHJCuHomRKh1qN2c0ACAK6LEwOecLavQ1kNOT2HZcqhYp0rLauzXJjxEyYkRSkm4UFw6xYYpkFkWALAMSgwszTAMHTp1TpsKTmnzwQu/6ry76IwqvzfNEhTgp25tHJ5TQ8kJEdx4DgAsjhIDSzlfXqlth53/di3LaZ0oqTnLEusIVnJChOe3hjrHhfG8IgDwMZQYNFqGYehI8TltOnjac0O5r79xqeJ7syyB/jZ1ibvwG0PJiRfuzxIXHmJSagBAQ6HEoNE4X16pHUe+u5blQmk5dsZdY7+oULunsKQkRqhLnEPBgcyyAEBTQ4mBaQqd5769++2FwrLzG6fKK6vPsgT42dQ5Luzb0nLht4bahIfIZuNmcgDQ1FFi0CDKKqq08xtntVNDhc7zNfZr1SJIPRMiPDeT69bGoZAgZlkAADVRYlAvjrnOa3PB6W8vwC3W9iNOlVVUVdvH38+mjjGh/zo1lBCp+EhmWQAAPwwlBnVWXlmlr79xffsk52JtPnhaR4rP1dgvolngv50WilD3tg41t/O/IADg6vATBLV2/Iz728JyWlsOFmvbkWKdL68+y+Jnk66LDvUUlpTECF3TshmzLAAAr6HE4LIqKqu0u+jMvz0YsVgFp87W2M8REqieCeGewtIjPlwtmGUBANQjfsqgmlOlZZ6nOG8uOK1th506W1ZZbR+bTeoQ1eLCqaFvTw+1a9Vcfn7MsgAAGg4lBtX813ubtCH/VLVtofYA3fDtLEtyYoRuiA+XIyTQpIQAAFxAiUE1KYkROlHi9hSWlMQIXdu6BbMsAIBGx2YYhnHl3Ro/l8slh8Mhp9OpsLAws+NYVlWVQWEBADSYuvz89qunTLAoCgwAwCooMQAAwJIoMQAAwJIoMQAAwJIoMQAAwJIoMQAAwJIoMQAAwJIoMQAAwJIoMQAAwJIoMQAAwJIoMQAAwJIoMQAAwJIoMQAAwJLqrcS8/fbbSkpKUnBwsFJSUvTpp59edv/s7GylpKQoODhY7dq10zvvvFNf0QAAgA+olxKzaNEiTZw4US+88IK2bNmim266ScOGDVNBQcFF98/Pz9edd96pm266SVu2bNHzzz+vJ598UpmZmfURDwAA+ACbYRiGtw/at29fJScna+bMmZ5tnTp10siRI5WRkVFj/2effVbLly/Xrl27PNsee+wxbd26VevXr7/on+F2u+V2uz3rTqdTCQkJOnTokMLCwrz4bgAAQH1xuVyKj49XcXGxHA5HrcYGeDtMWVmZNm3apOeee67a9iFDhuiLL7646Jj169dryJAh1bYNHTpUs2fPVnl5uQIDA2uMycjI0Msvv1xje3x8fB3SAwAAM5w8edL8EnPixAlVVlYqOjq62vbo6GgVFRVddExRUdFF96+oqNCJEycUGxtbY8zkyZOVnp7uWS8uLlZiYqIKCgpq/SHgX75rxMxo1R2fpffwWXoHn6P38Fl6z3dnUiIjI2s91usl5js2m63aumEYNbZdaf+Lbf+O3W6X3W6vsd3hcPA/lBeEhYXxOXoJn6X38Fl6B5+j9/BZeo+fX+0v0/X6hb2tWrWSv79/jVmXY8eO1Zht+U5MTMxF9w8ICFDLli29HREAAPgAr5eYoKAgpaSkKCsrq9r2rKwspaamXnRM//79a+y/atUq9erV66LXwwAAANTLr1inp6frf//3fzVnzhzt2rVLTz/9tAoKCvTYY49JunA9y7hx4zz7P/bYYzp48KDS09O1a9cuzZkzR7Nnz9akSZN+8J9pt9v1y1/+8qKnmPDD8Tl6D5+l9/BZegefo/fwWXpPXT7LevkVa+nCze5++9vfqrCwUF27dtUf/vAHDRw4UJI0fvx4HThwQGvXrvXsn52draefflo7d+5UXFycnn32WU/pAQAA+L56KzEAAAD1iWcnAQAAS6LEAAAAS6LEAAAAS6LEAAAAS/KJEvP2228rKSlJwcHBSklJ0aeffmp2JEtat26dhg8frri4ONlsNi1dutTsSJaUkZGh3r17KzQ0VFFRURo5cqT27NljdizLmTlzprp37+65I2r//v21cuVKs2P5hIyMDNlsNk2cONHsKJYzZcoU2Wy2aktMTIzZsSzpyJEj+s///E+1bNlSzZo10w033KBNmzbV6hiWLzGLFi3SxIkT9cILL2jLli266aabNGzYMBUUFJgdzXJKS0vVo0cPzZgxw+wolpadna0JEyboyy+/VFZWlioqKjRkyBCVlpaaHc1S2rZtq1dffVU5OTnKycnRrbfeqhEjRmjnzp1mR7O0jRs3atasWerevbvZUSyrS5cuKiws9Czbt283O5LlnD59WgMGDFBgYKBWrlypr7/+Wq+//rrCw8NrdRzL/4p13759lZycrJkzZ3q2derUSSNHjlRGRoaJyazNZrNpyZIlGjlypNlRLO/48eOKiopSdna2515JuDqRkZF67bXX9PDDD5sdxZJKSkqUnJyst99+W6+88opuuOEGvfHGG2bHspQpU6Zo6dKlys3NNTuKpT333HP6/PPP63zmxNIzMWVlZdq0aZOGDBlSbfuQIUP0xRdfmJQKqM7pdErSVT2hFRdUVlZq4cKFKi0tVf/+/c2OY1kTJkzQXXfdpdtuu83sKJaWl5enuLg4JSUl6YEHHtD+/fvNjmQ5y5cvV69evXTfffcpKipKPXv21Lvvvlvr41i6xJw4cUKVlZU1HiwZHR1d44GSgBkMw1B6erpuvPFGde3a1ew4lrN9+3a1aNFCdrtdjz32mJYsWaLOnTubHcuSFi5cqM2bNzNDXUd9+/bVggUL9PHHH+vdd99VUVGRUlNTdfLkSbOjWcr+/fs1c+ZMdejQQR9//LEee+wxPfnkk1qwYEGtjhNQT/kalM1mq7ZuGEaNbYAZHn/8cW3btk2fffaZ2VEs6frrr1dubq6Ki4uVmZmptLQ0ZWdnU2Rq6dChQ3rqqae0atUqBQcHmx3H0oYNG+b5727duql///5q37695s+fr/T0dBOTWUtVVZV69eqlqVOnSpJ69uypnTt3aubMmdWerXgllp6JadWqlfz9/WvMuhw7dqzG7AzQ0J544gktX75ca9asUdu2bc2OY0lBQUG69tpr1atXL2VkZKhHjx76n//5H7NjWc6mTZt07NgxpaSkKCAgQAEBAcrOztabb76pgIAAVVZWmh3Rspo3b65u3bopLy/P7CiWEhsbW+MfI506dar1L+VYusQEBQUpJSVFWVlZ1bZnZWUpNTXVpFRo6gzD0OOPP67Fixfrk08+UVJSktmRfIZhGHK73WbHsJzBgwdr+/btys3N9Sy9evXSf/zHfyg3N1f+/v5mR7Qst9utXbt2KTY21uwoljJgwIAat57Yu3evEhMTa3Ucy59OSk9P19ixY9WrVy/1799fs2bNUkFBAU/AvgolJSXat2+fZz0/P1+5ubmKjIxUQkKCicmsZcKECXr//fe1bNkyhYaGemYKHQ6HQkJCTE5nHc8//7yGDRum+Ph4nTlzRgsXLtTatWv10UcfmR3NckJDQ2tck9W8eXO1bNmSa7VqadKkSRo+fLgSEhJ07NgxvfLKK3K5XEpLSzM7mqU8/fTTSk1N1dSpU3X//ffrq6++0qxZszRr1qzaHcjwAW+99ZaRmJhoBAUFGcnJyUZ2drbZkSxpzZo1hqQaS1pamtnRLOVin6EkY+7cuWZHs5SHHnrI8/e6devWxuDBg41Vq1aZHctn3HzzzcZTTz1ldgzLGT16tBEbG2sEBgYacXFxxr333mvs3LnT7FiW9OGHHxpdu3Y17Ha70bFjR2PWrFm1Pobl7xMDAACaJktfEwMAAJouSgwAALAkSgwAALAkSgwAALAkSgwAALAkSgwAALAkSgwAALAkSgwAALAkSgwAALAkSgwAALAkSgwAALCk/w+0gcfIltw3OwAAAABJRU5ErkJggg=="/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6499a720fd6b8715">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Task04:">Task04:<a class="anchor-link" href="#Task04:">¶</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3264e2657c35a82d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython2"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">22</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">14</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
+<img alt="No description has been provided for this image" class="" src="data:image/png;base64,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"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fad2609c000f2b9d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Task-05:">Task 05:<a class="anchor-link" href="#Task-05:">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1c312d805ff71e1a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Github Account name: alwaysstrive2024</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aab4c97511d878f7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Task-06:-https://github.com/alwaysstrive2024/COMP576.git">Task 06: <a href="https://github.com/alwaysstrive2024/COMP576.git">https://github.com/alwaysstrive2024/COMP576.git</a><a class="anchor-link" href="#Task-06:-https://github.com/alwaysstrive2024/COMP576.git">¶</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8be8c8466b7338bc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
